@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="zh-Hant" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Twilight Magic Healing Room · 暮光之境 | Slow Down &amp; Reconnect</title>
+<!-- Google Fonts for Playfair Display, Noto Serif, and Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,500;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#584323",
+            "surface-container-high": "#f2e7d7",
+            "on-error-container": "#93000a",
+            "on-background": "#201b12",
+            "surface-bright": "#fff8f2",
+            "error": "#ba1a1a",
+            "on-secondary-fixed-variant": "#4c4358",
+            "inverse-surface": "#353025",
+            "on-surface-variant": "#46464d",
+            "on-primary-fixed-variant": "#42455d",
+            "surface-tint": "#595d76",
+            "on-secondary-container": "#675d73",
+            "tertiary-fixed": "#fedeb2",
+            "error-container": "#ffdad6",
+            "background": "#fff8f2",
+            "tertiary": "#160b00",
+            "outline-variant": "#c7c5cd",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#201b12",
+            "secondary-fixed-dim": "#cfc2db",
+            "secondary-container": "#e5d8f2",
+            "primary-container": "#1e2238",
+            "on-tertiary-fixed": "#281800",
+            "on-tertiary-container": "#a18661",
+            "secondary-fixed": "#ebddf7",
+            "primary-fixed-dim": "#c2c5e2",
+            "on-primary-fixed": "#161a30",
+            "on-primary-container": "#8689a4",
+            "tertiary-container": "#312004",
+            "surface": "#fff8f2",
+            "inverse-on-surface": "#faefdf",
+            "primary-fixed": "#dee1ff",
+            "surface-container-low": "#fdf2e2",
+            "surface-dim": "#e3d9c9",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#c2c5e2",
+            "surface-variant": "#ece1d2",
+            "tertiary-fixed-dim": "#e0c298",
+            "surface-container": "#f7ecdd",
+            "outline": "#77767e",
+            "secondary": "#645a70",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "primary": "#080c21",
+            "surface-container-highest": "#ece1d2",
+            "on-secondary-fixed": "#20182a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.75rem",
+            "space-xl": "3.5rem",
+            "space-lg": "2.25rem",
+            "space-md": "1.25rem",
+            "margin": "3rem",
+            "space-xs": "0.375rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Playfair Display", "Noto Serif TC", "serif"],
+            "body-sm": ["Noto Serif", "Noto Serif TC", "serif"],
+            "display-lg-mobile": ["Playfair Display", "Noto Serif TC", "serif"],
+            "body-lg": ["Noto Serif", "Noto Serif TC", "serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Playfair Display", "Noto Serif TC", "serif"],
+            "headline-lg": ["Playfair Display", "Noto Serif TC", "serif"],
+            "body-md": ["Noto Serif", "Noto Serif TC", "serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "display-lg": ["Playfair Display", "Noto Serif TC", "serif"],
+            "headline-lg-mobile": ["Playfair Display", "Noto Serif TC", "serif"]
+          },
+          "fontSize": {
+            "headline-md": ["24px", { "lineHeight": "34px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg": ["36px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "display-lg": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .twilight-glow {
+      box-shadow: 0 16px 40px -10px rgba(158, 130, 156, 0.15), 0 4px 16px -2px rgba(30, 34, 56, 0.05);
+    }
+    .twilight-glow-hover:hover {
+      box-shadow: 0 20px 48px -8px rgba(158, 130, 156, 0.22), 0 6px 20px -2px rgba(30, 34, 56, 0.08);
+    }
+    .frosted-glass {
+      background: rgba(253, 251, 247, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .dark .frosted-glass {
+      background: rgba(8, 12, 33, 0.88);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-primary transition-colors duration-300">
+<!-- TOP APP BAR / NAVIGATION (Semantic Shared Component) -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/85 dark:bg-primary/85 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-20">
+<!-- Brand Logo Anchor -->
+<a class="flex flex-col group text-left" href="#home">
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-on-surface tracking-wide group-hover:opacity-85 transition-opacity">
+          Twilight Magic · 平安小屋</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase -mt-1">
+          Healing Room · Malaysia
+        </span>
+</a>
+<!-- Desktop Navigation Cluster -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-tertiary-fixed font-label-md border-b-2 border-primary dark:border-tertiary-fixed pb-1 transition-all" href="#services">
+          Offerings 療癒項目
+        </a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-tertiary-fixed transition-colors pb-1 font-label-md" href="#about">
+          Our Sanctuary 空間理念
+        </a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-tertiary-fixed transition-colors pb-1 font-label-md" href="#faq">
+          Wisdom 常見問題
+        </a>
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-tertiary-fixed transition-colors pb-1 font-label-md" href="#stories">
+          Stories 訪客故事
+        </a>
+</nav>
+<!-- Trailing Action Group -->
+<div class="flex items-center gap-4">
+<!-- Bilingual Indicator -->
+<span class="hidden lg:inline-flex items-center text-label-sm font-label-sm text-secondary border border-outline-variant/40 rounded-full px-3 py-1">
+          EN / 中文
+        </span>
+<!-- Theme Mode Toggle -->
+<button aria-label="Toggle Night Twilight Mode" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-variant/40 transition-colors" id="themeToggleBtn">
+<span class="material-symbols-outlined text-lg" data-icon="dark_mode">dark_mode</span>
+</button>
+<!-- Primary Reservation CTA -->
+<a class="rounded-full bg-primary-container text-on-primary hover:bg-secondary transition-all duration-300 px-5 py-2.5 font-label-md text-label-md tracking-wider shadow-sm active:scale-95 inline-flex items-center gap-2" href="#pricing">
+<span class="">Book Session 預約靜修</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="overflow-hidden" id="home">
+<!-- HERO SECTION -->
+<section class="relative min-h-[92vh] flex items-center justify-center px-6 md:px-12 py-20">
+<!-- Background Asset with Atmospheric Gradient Overlay -->
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="Twilight Magic Sanctuary" class="w-full h-full object-cover object-center filter brightness-[0.92] contrast-[0.98] transform scale-[1.02] transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSH_lHcWsmhnLgaa-pYG_swsHdWFK7gmM1niOe7iFKxZpXmNu_SRZpGItGgOr4wO5T5P_K4xpPE6yrmCKYv6EvJWJkkDt7WTPrZujGnSRx5yAVyHMq9LxFGeGhZGCxbFRSU3F8CXzf4N3rjgS4PN_31u9B7vPz6YxDf2cJ0uyLNr86hvIWC0NO5u33b5OgPXlqfJzLrDthu_mrCkiV-_3svMVzbr5GMSAvHu_xE57CRvoqBdKGgoEX1w">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-surface-container-low/70 to-surface/40"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-background/40 to-background/90"></div>
+</div>
+<!-- Hero Central Content -->
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+<!-- Intention Pill Badge -->
+<div class="inline-flex items-center gap-2 px-5 py-2 rounded-full frosted-glass border border-outline-variant/40 shadow-sm mb-8 animate-fade-in">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">
+            Raindrop Technique · Yin Yoga · Online Tarot Reading
+          </span>
+<span class="text-xs text-outline">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">
+            精油雨滴療法 · 陰瑜伽 · 線上塔羅
+          </span>
+</div>
+<!-- Main Atmospheric Headline -->
+<h1 class="text-headline-lg-mobile md:text-display-lg font-display-lg text-primary leading-tight mb-4 tracking-tight">
+          When life feels too heavy, <br class="hidden sm:inline">come back to yourself.
+        </h1>
+<p class="text-headline-sm md:text-headline-md font-headline-md text-secondary mb-6 font-normal tracking-wide">
+          當生活有點太重，讓自己回來。
+        </p>
+<!-- Subheadline & Grounding Statement -->
+<div class="max-w-2xl mx-auto space-y-2 mb-10 text-on-surface-variant">
+<p class="font-body-lg text-body-lg italic opacity-95">
+            A quiet space to slow down, listen within, and reconnect with yourself.
+          </p>
+<p class="font-body-md text-body-md opacity-85">
+            一個讓你放慢腳步、聽見內在、重新與自己連結的空間。
+          </p>
+</div>
+<!-- Call to Action Cluster -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-primary-container text-on-primary hover:bg-secondary transition-all duration-300 font-label-md text-label-md tracking-wider twilight-glow active:scale-95 flex items-center justify-center gap-2" href="#services">
+<span class="">Begin Your Journey ｜ 開始你的療癒之旅</span>
+<span class="material-symbols-outlined text-base" data-icon="spa">spa</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full frosted-glass border border-outline-variant/50 text-on-surface hover:bg-surface-container transition-all duration-300 font-label-md text-label-md tracking-wider flex items-center justify-center gap-2" href="#about">
+<span class="">Explore Services ｜ 了解服務</span>
+</a>
+</div>
+<!-- Calming Sanctuary Location Badge -->
+<div class="mt-14 inline-flex items-center gap-3 text-secondary text-body-sm font-body-sm opacity-90">
+<span class="material-symbols-outlined text-lg" data-icon="routine">routine</span>
+<span class="">Malaysia Studio (Kuala Lumpur / Selangor) &amp; Worldwide Online</span>
+</div>
+</div>
+</section>
+<!-- PROBLEM & EMOTIONAL CONNECTION SECTION -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-3">
+          Gentle Reflection · 溫柔停留
+        </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-3">
+          Sometimes, you don't need to try harder.<br class="hidden sm:block"> You simply need a space to pause.
+        </h2>
+<p class="text-headline-sm font-headline-sm text-secondary">
+          有時候，你不是不夠努力，而是太久沒有停下來。
+        </p>
+</div>
+<!-- 3 Contemplation Cards (Bento / Atmospheric Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-low border border-outline-variant/30 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="nature_people">nature_people</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+              Always taking care of everything else.
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              總是在照顧其他人、回應外界的需求，卻很少停下來問問自己：「我現在還好嗎？」
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 text-label-sm font-label-sm text-secondary tracking-wider">
+            HOLDING SPACE FOR YOU
+          </div>
+</div>
+<!-- Card 2 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-low border border-outline-variant/30 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="air">air</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+              Your body is tired, but your mind keeps going.
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              身體累了，腦袋卻還停不下來。緊繃的肩膀、淺淺的呼吸，已經成為了每天的日常。
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 text-label-sm font-label-sm text-secondary tracking-wider">
+            REST &amp; NERVOUS SYSTEM EASE
+          </div>
+</div>
+<!-- Card 3 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-low border border-outline-variant/30 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="explore">explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+              You know you need space, but don't know where to begin.
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              你知道自己需要一點安靜與喘息，卻不知道該從哪裡開始整理混亂的心緒。
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 text-label-sm font-label-sm text-secondary tracking-wider">
+            SAFE, GROUNDED GUIDANCE
+          </div>
+</div>
+</div>
+<!-- Closing Callout Quote Box -->
+<div class="mt-14 max-w-4xl mx-auto p-8 rounded-2xl bg-surface-variant/40 border border-outline-variant/40 text-center">
+<p class="font-headline-sm text-headline-sm text-primary mb-2 italic">
+          "You don't have to have everything figured out before you give yourself permission to pause."
+        </p>
+<p class="font-body-md text-body-md text-secondary">
+          你不需要先把一切都想通，才值得給自己一點喘息的空間。
+        </p>
+</div>
+</section>
+<!-- INTRODUCTION / BRAND STORY (Split Sanctuary Canvas) -->
+<section class="py-24 bg-surface-container-low/60 border-y border-outline-variant/20" id="about">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Visual Side -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden twilight-glow border border-outline-variant/30">
+<img alt="Twilight Magic Sanctuary Space" class="w-full h-[480px] object-cover object-center filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBklmiuyjhPuK_elZZLu4tC0cp4hJC8rPN0dhho2aNutys5uA2KYhkMLpqWxLwSU2_XoKjIYZ1OcX1zD2yr_qKjdPUsfgr2sNcnkc-osQajCbXiQzO18erHl8NLUx8vnr1tdyUSG8SWIAencVSBIMA527RkDloJEKAQBg5KTAXnNk03oJd0Q76USlQM9SlrTTPfP7vkDnSRsfV5u2bnDY9FaTYDr2zAZkmx0aB00sB-hY-nf0kpoOnJBA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
+</div>
+<!-- Subtle Floating Aura Quote -->
+<div class="absolute -bottom-6 -right-4 sm:right-6 bg-surface p-5 rounded-xl border border-outline-variant/40 twilight-glow max-w-xs hidden sm:block">
+<span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase block mb-1">Gentle Intention</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Arrive with who you are right now. 帶著現在的自己來到這裡。
+            </p>
+</div>
+</div>
+<!-- Right Narrative Side -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 text-label-sm font-label-sm text-secondary uppercase tracking-widest">
+<span class="material-symbols-outlined text-base" data-icon="wb_twilight">wb_twilight</span>
+<span class="">Our Sanctuary · 空間理念</span>
+</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">
+            A space to come back to yourself.<br>
+<span class="text-headline-sm md:text-headline-md font-headline-md text-secondary font-normal">
+              一個讓你回到自己的空間。
+            </span>
+</h2>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p class="">
+              At Twilight Magic Healing Room, the intention is simple — to create a gentle space where you can pause, notice what is happening within, and reconnect with yourself.
+            </p>
+<p class="text-on-surface">
+              在 Twilight Magic Healing Room，我想創造的很簡單——一個讓你可以慢下來、感受自己、聽見內在的空間。
+            </p>
+<p class="">
+              You don't need to perform. You don't need to have all the answers. You can simply arrive as you are.
+            </p>
+<p class="text-on-surface">
+              你不需要表現得很好，也不需要已經知道所有答案。你只需要，帶著現在的自己來到這裡。
+            </p>
+</div>
+<!-- Sensory Tags -->
+<div class="pt-4 flex flex-wrap gap-2.5">
+<span class="px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-label-sm font-label-sm text-secondary">
+              Aromatherapy 精油芳療
+            </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-label-sm font-label-sm text-secondary">
+              Somatic Grounding 身體覺察
+            </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-label-sm font-label-sm text-secondary">
+              Reflective Tarot 內在對話
+            </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-label-sm font-label-sm text-secondary">
+              Breathwork 沉靜呼吸
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES OFFERINGS SECTION -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto" id="services">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">
+          Sanctuary Offerings · 療癒項目
+        </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-2">
+          Ways to slow down, reconnect and listen within.
+        </h2>
+<p class="text-headline-sm font-headline-sm text-secondary font-normal">
+          用不同的方式，慢下來、重新連結自己。
+        </p>
+</div>
+<!-- 4 Comprehensive Service Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- SERVICE 01: Raindrop Technique -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface border border-outline-variant/30 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between relative group">
+<div class="space-y-5">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-secondary tracking-widest">
+                SERVICE 01 · 身體療癒
+              </span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">
+                RM280 <span class="text-body-sm font-body-sm text-secondary">/ session</span>
+</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">
+              Raindrop Technique · 精油雨滴療法
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A gentle wellness experience designed to create space for relaxation, grounding and body awareness.
+            </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              讓自己慢下來，在放鬆、安定與身體覺察之中，重新感受自己。使用純淨草本精油結合溫柔手法，讓緊繃的神經系統在溫暖氣息中漸漸鬆開。
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-secondary">
+              90 Minutes · Studio Session
+            </span>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="#pricing">
+<span class="">Explore Raindrop ｜ 了解雨滴療法</span>
+<span class="material-symbols-outlined text-sm" data-icon="east">east</span>
+</a>
+</div>
+</div>
+<!-- SERVICE 02: Raindrop 5-Session Package -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-low border border-outline-variant/40 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between relative group">
+<div class="space-y-5">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-secondary tracking-widest">
+                SERVICE 02 · 深度累積
+              </span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-medium">
+                  RM1,000
+                </span>
+<span class="block text-label-sm font-label-sm text-secondary line-through">
+                  RM1,400 value
+                </span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">
+              Raindrop 5-Session Package · 雨滴療法 5 次配套
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A continuous journey of nourishment and nervous system restoration. 5 mindful sessions over your chosen pace.
+            </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              給自己一段持續的照顧旅程。身體的累積需要時間代謝，讓定期的芳香雨滴陪伴你渡過日常起伏，找回穩定的內在節奏。（現省 RM400）
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-secondary">
+              5 Sessions · Flexible Schedule
+            </span>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="#pricing">
+<span class="">View Package ｜ 查看配套</span>
+<span class="material-symbols-outlined text-sm" data-icon="east">east</span>
+</a>
+</div>
+</div>
+<!-- SERVICE 03: Yin Yoga -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface border border-outline-variant/30 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between relative group">
+<div class="space-y-5">
+<div class="flex justify-between items-start">
+<span class="text-label-sm font-label-sm text-secondary tracking-widest">
+                SERVICE 03 · 靜心呼吸
+              </span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-medium">
+                  First Trial RM50
+                </span>
+<span class="block text-label-sm font-label-sm text-secondary">
+                  4-Class Package Available
+                </span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">
+              Yin Yoga · 陰瑜伽
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A gentle, unhurried practice with space to breathe, soften and simply be.
+            </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              一種不急著做到最好、不需要表現的練習。在溫和的停留與綿長呼吸中，讓身體深層結締組織自然軟化，也讓心有一點沉澱的空間。
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-secondary">
+              75 Minutes · Gentle Flow
+            </span>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="#pricing">
+<span class="">Try Yin Yoga ｜ 體驗陰瑜伽</span>
+<span class="material-symbols-outlined text-sm" data-icon="east">east</span>
+</a>
+</div>
+</div>
+<!-- SERVICE 04: Online Tarot Reading -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-low border border-outline-variant/40 twilight-glow twilight-glow-hover transition-all duration-300 flex flex-col justify-between relative group">
+<div class="space-y-5">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<span class="text-label-sm font-label-sm text-secondary tracking-widest">
+                  SERVICE 04 · 覺察對話
+                </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-label-sm">
+                  Worldwide ｜ 全球線上
+                </span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-medium text-right text-base sm:text-lg">
+                Price upon enquiry
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">
+              Online Tarot Reading · 線上塔羅
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A reflective space to explore your current situation, questions and inner perspective.
+            </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              一個讓你整理當下狀態、探索問題與聆聽內在視角的空間。我們不作宿命論的預言，而是透過象徵牌卡作為鏡子，溫和梳理你心中真實的渴望與方向。
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-secondary">
+              60 Minutes · Zoom / Online
+            </span>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="https://wa.link/yy5ah7" rel="noopener noreferrer" target="_blank">
+<span class="">Explore Tarot ｜ 了解線上塔羅</span>
+<span class="material-symbols-outlined text-sm" data-icon="east">east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY TWILIGHT MAGIC (Pillars of Rest) -->
+<section class="py-24 bg-surface-container-high/40 border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">
+            Sanctuary Ethos · 空間初衷
+          </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-2">
+            There is nothing you need to prove here.
+          </h2>
+<p class="text-headline-sm font-headline-sm text-secondary font-normal">
+            在這裡，你不需要證明任何事情。
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Pillar 1 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="hourglass_empty">hourglass_empty</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+              Slow Down · 放慢
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              給急促的節奏一個緩衝期。允許時間被拉長，讓神經系統自然安頓下來。
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="hearing">hearing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+              Listen Within ·&nbsp;<div>聽見自己
+            </div></h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              在沒有外在雜訊的靜謐之中，重新聽見那些一直被你忽略的微弱心聲。
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="all_inclusive">all_inclusive</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+              Reconnect · 重新連結
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              拾起與身體感知、內在直覺與呼吸的聯繫，找回完整踏實的自己。
+            </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+              Be As You Are · 允許自己
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              無需包裝，沒有評斷。不管是疲倦或平靜，都被毫無保留地溫柔接納。
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SOCIAL PROOF / CLIENT REFLECTIONS (Sincere & Mindful Placeholders) -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto" id="stories">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">
+          Sanctuary Space · 空間印記
+        </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-2">
+          Client Reflections ｜ 來自客人的分享
+        </h2>
+<p class="font-body-md text-body-md text-secondary">
+          一段屬於你的溫柔停留與整理，期待在這裡靜靜被記錄。
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Story Card 1 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 twilight-glow flex flex-col justify-between">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-secondary opacity-60 text-2xl" data-icon="format_quote">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Your experience could be shared here. 一段屬於你的溫柔停留與整理，期待在這裡靜靜被記錄。"
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary text-xs">
+              M
+            </div>
+<div>
+<p class="text-label-sm font-label-sm text-primary">A Mindful Visitor</p>
+<p class="text-xs text-outline">Raindrop Technique</p>
+</div>
+</div>
+</div>
+<!-- Story Card 2 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 twilight-glow flex flex-col justify-between">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-secondary opacity-60 text-2xl" data-icon="format_quote">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Your experience could be shared here. 當身體被接納，心裡緊繃的那根弦也終於鬆下來了。"
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary text-xs">
+              S
+            </div>
+<div>
+<p class="text-label-sm font-label-sm text-primary">A Gentle Breath</p>
+<p class="text-xs text-outline">Yin Yoga Practice</p>
+</div>
+</div>
+</div>
+<!-- Story Card 3 -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 twilight-glow flex flex-col justify-between">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-secondary opacity-60 text-2xl" data-icon="format_quote">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Your experience could be shared here. 不需要急著解決難題，只是被清晰溫暖地照見自己。"
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary text-xs">
+              L
+            </div>
+<div>
+<p class="text-label-sm font-label-sm text-primary">A Reflective Seeker</p>
+<p class="text-xs text-outline">Online Tarot Consultation</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Thoughtful Invitation Note -->
+<div class="mt-12 text-center text-body-sm font-body-sm text-secondary">
+<span class="inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-base" data-icon="lock_open">lock_open</span>
+          Safe, confidential, and respected. We look forward to holding space for your journey.
+        </span>
+</div>
+</section>
+<!-- OFFER & PRICING SUMMARY SECTION -->
+<section class="py-24 bg-surface-container-low/50 border-t border-outline-variant/20" id="pricing">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">
+            Clear &amp; Honest Exchange · 方案與預約
+          </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-2">
+            Choose the space that feels right for you.
+          </h2>
+<p class="text-headline-sm font-headline-sm text-secondary font-normal">
+            選擇此刻最適合你的方式。
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Price Card 1: Raindrop Single -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest block mb-4">SINGLE SESSION</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">
+                Raindrop Technique
+              </h3>
+<p class="text-xs text-secondary mb-6">精油雨滴療法</p>
+<div class="mb-6">
+<span class="font-headline-lg text-headline-lg text-primary font-medium">RM280</span>
+<span class="text-body-sm font-body-sm text-secondary">/ 90 mins</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Pure therapeutic essential oils</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Full spine &amp; foot reflexology</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Quiet decompression period</span>
+</li>
+</ul>
+</div>
+<a class="mt-8 block text-center py-3 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md tracking-wider transition-colors" href="https://wa.link/yy5ah7" target="_blank" rel="noopener noreferrer">
+              Book Session
+            </a>
+</div>
+<!-- Price Card 2: Raindrop Package (Featured) -->
+<div class="p-8 rounded-2xl bg-surface border-2 border-secondary/60 twilight-glow flex flex-col justify-between relative transform lg:-translate-y-2">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-on-secondary px-4 py-0.5 rounded-full text-label-sm font-label-sm tracking-wider uppercase">
+              Most Nourishing
+            </div>
+<div>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest block mb-4">5-SESSION JOURNEY</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">
+                Raindrop 5-Session
+              </h3>
+<p class="text-xs text-secondary mb-6">雨滴療法 5 次配套</p>
+<div class="mb-6">
+<span class="font-headline-lg text-headline-lg text-primary font-medium">RM1,000</span>
+<span class="text-label-sm font-label-sm text-secondary block mt-1">Save RM400 (was RM1,400)</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">5 dedicated deep sessions</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Long-term nervous system reset</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Valid for 6 months at your pace</span>
+</li>
+</ul>
+</div>
+<a class="mt-8 block text-center py-3 rounded-full bg-primary-container text-on-primary hover:bg-secondary font-label-md text-label-md tracking-wider transition-colors shadow-sm" href="https://wa.link/yy5ah7" target="_blank" rel="noopener noreferrer">
+              Reserve Package
+            </a>
+</div>
+<!-- Price Card 3: Yin Yoga -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest block mb-4">FIRST TRIAL</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">
+                Yin Yoga Experience
+              </h3>
+<p class="text-xs text-secondary mb-6">陰瑜伽初次體驗</p>
+<div class="mb-6">
+<span class="font-headline-lg text-headline-lg text-primary font-medium">RM50</span>
+<span class="text-body-sm font-body-sm text-secondary">/ trial session</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Intimate small-group practice</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Props &amp; mats fully provided</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">4-Class package available after</span>
+</li>
+</ul>
+</div>
+<a class="mt-8 block text-center py-3 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md tracking-wider transition-colors" href="https://wa.link/yy5ah7" target="_blank" rel="noopener noreferrer">
+              Try Yin Yoga
+            </a>
+</div>
+<!-- Price Card 4: Online Tarot -->
+<div class="p-8 rounded-2xl bg-surface border border-outline-variant/30 flex flex-col justify-between hover:border-secondary transition-all duration-300">
+<div>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest block mb-4">WORLDWIDE ONLINE</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">
+                Online Tarot Reading
+              </h3>
+<p class="text-xs text-secondary mb-6">線上塔羅與內在對話</p>
+<div class="mb-6">
+<span class="font-headline-md text-headline-md text-primary font-medium">Enquiry Basis</span>
+<span class="text-label-sm font-label-sm text-secondary block mt-1">歡迎私訊諮詢</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Worldwide Zoom video session</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">Gentle, reflective inquiry</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-1" data-icon="check">check</span>
+<span class="">No fatalistic fortune telling</span>
+</li>
+</ul>
+</div>
+<a class="mt-8 block text-center py-3 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md tracking-wider transition-colors" href="https://wa.link/yy5ah7" target="_blank" rel="noopener noreferrer">
+              Enquire on WhatsApp
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- IMMERSIVE PEACEFUL CTA SECTION (Twilight Dusk Container) -->
+<section class="py-24 px-6 md:px-12">
+<div class="max-w-5xl mx-auto rounded-3xl bg-primary-container text-on-primary p-10 md:p-20 text-center relative overflow-hidden twilight-glow">
+<!-- Ambient Warm Twilight Glow Circles -->
+<div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-secondary-container/20 filter blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-tertiary-fixed/15 filter blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-6">
+<span class="font-label-sm text-label-sm text-tertiary-fixed tracking-widest uppercase">
+            A GENTLE INVITATION · 溫柔相邀
+          </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-inverse-on-surface">
+            Maybe this is your moment to slow down.<br>
+<span class="text-headline-sm md:text-headline-md font-headline-md font-normal text-tertiary-fixed">
+              也許，現在就是讓自己慢下來的時候。
+            </span>
+</h2>
+<div class="space-y-1 text-primary-fixed-dim font-body-md text-body-md">
+<p class="">Come as you are. Take a breath. Begin where you are.</p>
+<p class="">帶著現在的自己來就好。深呼吸，從此刻開始。</p>
+</div>
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed hover:bg-surface font-label-md text-label-md tracking-wider transition-all duration-300 active:scale-95 shadow-md flex items-center justify-center gap-2" href="https://wa.link/yy5ah7" rel="noopener noreferrer" target="_blank">
+<span class="">Book Your Session ｜ 預約你的療癒時光</span>
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-primary-fixed-dim/40 text-inverse-on-surface hover:bg-white/10 font-label-md text-label-md tracking-wider transition-all duration-300 flex items-center justify-center gap-2" href="https://wa.link/yy5ah7" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+<span class="">WhatsApp to Enquire ｜ WhatsApp 查詢</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION (Accordion Interaction) -->
+<section class="py-24 px-6 md:px-12 max-w-4xl mx-auto border-t border-outline-variant/20" id="faq">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">
+          Frequently Asked Questions · 常見問題
+        </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-2">
+          Clear Thoughts &amp; Reassurance
+        </h2>
+<p class="text-headline-sm font-headline-sm text-secondary font-normal">
+          為你的前來，解除微小疑慮與不確定。
+        </p>
+</div>
+<div class="space-y-4" id="faq-container">
+<!-- FAQ Item 1 -->
+<div class="border border-outline-variant/30 rounded-2xl bg-surface p-6 transition-all duration-200">
+<button aria-expanded="false" class="w-full flex justify-between items-center text-left gap-4 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">
+              Do I need to have a specific problem before booking? / 我一定要有特定問題才能預約嗎？
+            </span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/20 mt-4">
+<p class="mb-2">
+<strong>No.</strong> You don't need to arrive with a problem to solve. You may simply want to slow down, rest, reflect or reconnect with yourself.
+            </p>
+<p class="">
+              不需要。你不一定要帶著一個具體的問題或困境來。有時候，只是單純想休息一下、整理自己、讓混亂的心放慢腳步，這本身就已經是非常值得前來的理由。
+            </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border border-outline-variant/30 rounded-2xl bg-surface p-6 transition-all duration-200">
+<button aria-expanded="false" class="w-full flex justify-between items-center text-left gap-4 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">
+              Is Raindrop Technique a medical treatment? / Raindrop 是醫療治療嗎？
+            </span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/20 mt-4">
+<p class="mb-2">
+<strong>No.</strong> It is offered as a complementary wellness and relaxation experience and does not replace medical diagnosis or treatment.
+            </p>
+<p class="">
+              不是。這裡提供的是身心放鬆、神經舒緩與自我覺察的 wellness experience，主要輔助身體回歸穩定平衡狀態，絕不能取代正規醫療診斷或心理治療。若有重症或特殊病史，建議先諮詢醫師。
+            </p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="border border-outline-variant/30 rounded-2xl bg-surface p-6 transition-all duration-200">
+<button aria-expanded="false" class="w-full flex justify-between items-center text-left gap-4 faq-toggle">
+<span class="font-headline-sm text-headline-sm text-primary">
+              I've never tried Yin Yoga before. Can I join? / 我從來沒有接觸過陰瑜伽，也可以參加嗎？
+            </span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 faq-icon" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/20 mt-4">
+<p class="mb-2">
+<strong>Yes, absolutely.</strong> The RM50 first trial allows you to experience the gentle practice before deciding whether it feels right for you.
+            </p>
+<p class="">
+              非常歡迎。陰瑜伽完全不考驗柔軟度，也不需要任何瑜伽基礎。我們專注於停留與呼吸，並提供充足的抱枕與磚塊支撐。你可以先以 RM50 體驗一次，感受身體在此節奏下的放鬆狀態。
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Semantic Shared Component) -->
+<footer class="docked full-width bottom bg-surface-container-high dark:bg-primary-container text-primary dark:text-primary-fixed border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-16 flex flex-col gap-10">
+<!-- Top Row: Brand & Pillars -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-outline-variant/30 dark:border-outline/20">
+<div>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-on-surface block">
+            Twilight Magic Healing Room · 平安小屋</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-primary-fixed-dim mt-1">
+            Slow down. Listen within. Come back to yourself. · 安靜 · 釐清 · 允許自己慢下來
+          </p>
+</div>
+<div class="flex items-center gap-4">
+<a class="px-4 py-2 rounded-full border border-outline-variant/40 hover:text-primary dark:hover:text-on-primary transition-colors text-label-sm font-label-sm inline-flex items-center gap-2" href="https://wa.link/yy5ah7" rel="noopener noreferrer" target="_blank">
+<span class="">WhatsApp Direct</span>
+</a>
+<a class="px-4 py-2 rounded-full border border-outline-variant/40 hover:text-primary dark:hover:text-on-primary transition-colors text-label-sm font-label-sm inline-flex items-center gap-2" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="">Instagram Sanctuary</span>
+</a>
+</div>
+</div>
+<!-- Middle Grid: Semantic Shared Links & Studio Info -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">Studio Sanctuary</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-primary-fixed-dim">
+            Malaysia Studio: Petaling Jaya / Kuala Lumpur<br>
+            By Appointment Only<br>
+            Worldwide Online Sessions via Zoom
+          </p>
+</div>
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">Offerings</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li class="">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#services">
+                Raindrop Therapy 芳香雨滴
+              </a>
+</li>
+<li class="">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#services">
+                Yin Yoga 陰瑜伽
+              </a>
+</li>
+<li class="">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#services">
+                Online Tarot 線上塔羅
+              </a>
+</li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">Intentions</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li class="">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#about">
+                Sanctuary Ethos 空間初心
+              </a>
+</li>
+<li class="">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#stories">
+                Intention Journal 冥想心札
+              </a>
+</li>
+<li class="">
+<a class="text-on-surface-variant dark:text-primary-fixed-dim hover:text-primary dark:hover:text-on-primary transition-colors duration-200" href="#faq">
+                Privacy &amp; Disclaimers 免責聲明
+              </a>
+</li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">Slow Living</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-primary-fixed-dim">
+            Take a gentle breath before closing this window. You are doing well.
+          </p>
+</div>
+</div>
+<!-- Bottom Disclaimers & Copyright -->
+<div class="pt-6 border-t border-outline-variant/30 dark:border-outline/20 space-y-4">
+<!-- Mandated Prominent Disclaimer Box -->
+<div class="p-4 rounded-xl bg-surface/50 dark:bg-primary/40 border border-outline-variant/30 text-xs font-body-sm leading-relaxed text-secondary dark:text-primary-fixed-dim">
+<p class="mb-1">
+<strong>Sanctuary Wellness Disclaimer:</strong> These services are offered as complementary wellness, relaxation and self-reflection experiences and are not a substitute for medical or mental-health diagnosis or treatment.
+          </p>
+<p class="">
+            本空間提供之身心放鬆、芳療覺察與自我對話服務，僅作為身心舒緩與自我探索之輔助體驗，並非醫療診斷或心理治療。若您有嚴重的身心醫療需求，請尋求合格之醫療專業人員協助。
+          </p>
+</div>
+<!-- Copyright Text String from JSON -->
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-primary-fixed-dim text-center">
+          © 2024 Twilight Magic Healing Room · 暮光之境. All rights reserved. Gentle self-reflection &amp; mindful bodywork. Not intended as medical diagnosis or psychiatric treatment.
+        </p>
+</div>
+</div>
+</footer>
+<!-- LIGHTWEIGHT INTERACTIVITY SCRIPT -->
+<script>
+    // FAQ Accordion Micro-interaction
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all others
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-toggle').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        if (!isExpanded) {
+          content.classList.remove('hidden');
+          button.setAttribute('aria-expanded', 'true');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Dark/Twilight Theme Toggle
+    const themeBtn = document.getElementById('themeToggleBtn');
+    themeBtn?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+
+
+</body></html>
